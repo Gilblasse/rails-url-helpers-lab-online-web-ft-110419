@@ -9,7 +9,7 @@ class StudentsController < ApplicationController
   end
   
   def activate
-    
+    byebug
   end
 
   private
