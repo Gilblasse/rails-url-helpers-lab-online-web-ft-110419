@@ -16,7 +16,7 @@ class StudentsController < ApplicationController
       @student.active = true
     end
      @student.save
-     redirect_back fallback_location: { action: "show", id: 5 }
+     redirect_back fallback_location: { action: "show", id: @student.id }
   end
 
   private
