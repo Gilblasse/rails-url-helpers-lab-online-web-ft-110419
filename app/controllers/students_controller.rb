@@ -9,7 +9,8 @@ class StudentsController < ApplicationController
   end
   
   def activate
-    byebug
+    @student = Student.find(params[:id])
+    @student.activate = false
   end
 
   private
